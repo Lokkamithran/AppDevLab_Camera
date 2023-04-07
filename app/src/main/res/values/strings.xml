@@ -1,8 +1,4 @@
 <resources>
     <string name="app_name">CameraApp</string>
-    <string name="open_camera">Open Camera</string>
-
-    <string name="permission_required">Camera access is required to display the camera preview.</string>
-    <string name="ok">OK</string>
-    <string name="permission_granted">Permission is granted.</string>
+    <string name="take_picture">Take Picture</string>
 </resources>

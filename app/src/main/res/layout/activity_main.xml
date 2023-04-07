@@ -7,16 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontal_Guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".75"/>
+
     <Button
         android:id="@+id/camera_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="50dp"
+        android:elevation="5dp"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_Guideline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/open_camera"
-        android:onClick="onClickRequestPermission"/>
+        android:text="@string/take_picture"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
